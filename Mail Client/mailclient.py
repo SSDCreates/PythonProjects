@@ -28,8 +28,8 @@ server.login(username, password)
 
 #define message as mime multiplart
 msg = MIMEMultipart()
-msg['From'] = 'Sam D'
-msg['To'] = 's.davidson0920@gmail.com'
+msg['From'] = 'User'
+msg['To'] = 'email@gmail.com'
 msg['Subject'] = 'Test'
 
 with open('message.txt', 'r') as f:
@@ -55,6 +55,6 @@ msg.attach(p)
 
 txt = msg.as_string()
 
-server.sendmail(username, 's.davidson0920@gmail.com', txt)
+server.sendmail(username, 'email@email.com', txt)
 
 
